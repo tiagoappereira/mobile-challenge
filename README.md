@@ -13,7 +13,7 @@ Please read each one carefully and pick the one you feel most comfortable with.
 
 If everything goes well the next step of the process will be an on-site interview. It'll start with a discussion around your project. We normally ask you to implement a new feature (even if it's pseudo-code), to refactor and unit-test a particular component, and in general we aim to have an informal discussion about your approach.
 
-Next is usually a question around iOS architecture (i.e. how to implement an often encountered feature).
+Next is usually a question around iOS/Android architecture (i.e. how to implement an often encountered feature).
 
 Our main aim is to understand how well we would work with you and you with us, so this is also a chance for you to learn about us. This pair programming / interview session usually lasts from one to two hours.
 
@@ -48,7 +48,7 @@ You can retrieve the remaining information from:
 
 The following requirements should be met:
 
-* Use Swift 4.0 for iOS.
+* Use Swift 4.2 for iOS. / Use Kotlin for Android.
 * The information (posts and post details) should be available offline. It's assumed that if it's the first time you are accessing the app, and you are offline, you shouldn't see anything.
 * The code should be production grade.
 * It should compile and run.
@@ -57,7 +57,7 @@ The following requirements should be met:
 
 We would be happy if you would submit a project you already have (e.g. potentially a demo project for another company). Still the project has to obey to the following requirements:
 
-* Use Swift 4.0 for iOS.
+* Use Swift 4.2 for iOS. / Use Kotlin for Android.
 * It should have at least two distinct network calls.
 * It should parse the network response and present the information to the user.
 * It should have some sort of persistence mechanism.
@@ -69,7 +69,7 @@ If you have a project with these requirements then perfect! Please ensure you ha
 
 ## Open Source Work <a name="open-source"></a>
 
-We would like to see a **non-trivial** pull request you have done to a public open source project. This should be something you are proud and where you show your technical skills. **It should also be related to iOS development**: it should be aligned with what you will do on a day-to-day basis. 😊 ✨ 🌳
+We would like to see a **non-trivial** pull request you have done to a public open source project. This should be something you are proud and where you show your technical skills. **It should also be related to iOS/Android development**: it should be aligned with what you will do on a day-to-day basis. 😊 ✨ 🌳
 
 ---
 <br>
