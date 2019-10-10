@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Unbabel Demo Project</string>
+    <string name="post_title">Post Title</string>
+    <string name="post_detail_title">Title</string>
+    <string name="post_detail_body">This is a post body example</string>
+    <string name="post_detail_author">Posted by Author</string>
+    <string name="post_detail_comments_number">10 comments</string>
+    <string name="post_comments_text">%d comments</string>
+    <string name="post_user_text">Posted by %s</string>
+    <string name="close">Close</string>
+    <string name="posts_header_text">All Posts</string>
+</resources>
