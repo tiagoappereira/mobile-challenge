@@ -21,15 +21,24 @@ class UnbabelDemoApplication : Application(){
         }
     }
 
+    /**
+     * This function setups WorkManager
+     */
     private fun setupRecurringWork() {
+
+        /**
+         * WorkRequest only runs if there is a network connection and if battery is not low
+         */
         val constraints = Constraints.Builder()
             .setRequiredNetworkType(NetworkType.CONNECTED)
             .setRequiresBatteryNotLow(true)
-            .setRequiresCharging(false)
             .build()
 
+        /**
+         * Setups [RefreshDataWorker] to run once a day
+         */
         val repeatingRequest = PeriodicWorkRequest
-            .Builder(RefreshDataWorker::class.java,1, TimeUnit.DAYS)
+            .Builder(RefreshDataWorker::class.java, 1, TimeUnit.DAYS)
             .setConstraints(constraints)
             .build()
 
@@ -38,7 +47,7 @@ class UnbabelDemoApplication : Application(){
                 RefreshDataWorker.WORK_NAME,
                 ExistingPeriodicWorkPolicy.KEEP,
                 repeatingRequest
-        )
+            )
     }
 
     override fun onCreate() {

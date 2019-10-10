@@ -19,10 +19,7 @@ import pt.unbabel.android.demo.viewmodels.PostsViewModel
  * Cumulative data is displayed in a RecyclerView.
  */
 class PostsFragment : Fragment() {
-    /**
-     * Called when the Fragment is ready to display content to the screen.
-     * This function uses DataBindingUtil to inflate R.layout.fragment_posts.
-     */
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
 

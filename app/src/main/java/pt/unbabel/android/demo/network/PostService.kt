@@ -11,14 +11,15 @@ import retrofit2.http.GET
 private const val BASE_URL = "http://jsonplaceholder.typicode.com/"
 
 /**
- * Moshi object that Retrofit will be using, with Kotlin adapter for full Kotlin compatibility.
+ * Moshi object that Retrofit will be using to parse JSON with Kotlin adapter for full
+ * Kotlin compatibility.
  */
 private val moshi = Moshi.Builder()
     .add(KotlinJsonAdapterFactory())
     .build()
 
 /**
- * A retrofit service to fetch posts
+ * A retrofit service to fetch posts, users and comments
  */
 interface PostService {
 
@@ -37,7 +38,7 @@ interface PostService {
 */
 object Network {
     /**
-     * Retrofit object using a Moshi converter
+     * Retrofit object using a Moshi JSON converter
      * Configured to parse JSON and use coroutines
      */
     private val retrofit = Retrofit.Builder()

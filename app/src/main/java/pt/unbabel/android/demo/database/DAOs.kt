@@ -3,6 +3,10 @@ package pt.unbabel.android.demo.database
 import androidx.lifecycle.LiveData
 import androidx.room.*
 
+/**
+ * Defines methods for using the Database entities classes with Room.
+ */
+
 @Dao
 interface PostDao{
 

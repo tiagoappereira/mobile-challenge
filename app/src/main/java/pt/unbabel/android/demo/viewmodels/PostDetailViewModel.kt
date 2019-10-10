@@ -5,7 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import pt.unbabel.android.demo.database.getDatabase
+import pt.unbabel.android.demo.database.PostsDatabase
 import pt.unbabel.android.demo.domain.PostDetail
 import pt.unbabel.android.demo.repository.PostsRepository
 
@@ -15,7 +15,7 @@ import pt.unbabel.android.demo.repository.PostsRepository
  */
 class PostDetailViewModel(postId: Long, application: Application): ViewModel() {
 
-    private val database = getDatabase(application)
+    private val database = PostsDatabase.getDatabase(application)
     private val repo = PostsRepository(database)
 
     private val _selectedPost = repo.getPost(postId)
@@ -49,8 +49,7 @@ class PostDetailViewModel(postId: Long, application: Application): ViewModel() {
     }
 
     /**
-     * This is pretty much boiler plate code for a ViewModel Factory.
-     * Provides the key for the post.
+     * Factory for constructing PostDetailViewModel with parameters
      */
     class Factory(private val postKey: Long, private val application: Application) : ViewModelProvider.Factory {
         @Suppress("unchecked_cast")
